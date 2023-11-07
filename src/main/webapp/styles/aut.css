@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 200px;
+
+}
+.input{
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid tomato;
+    border-radius: 8px;
+
+}
+form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
