@@ -11,9 +11,11 @@ import java.util.UUID;
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 
-public class User {
+public class UserEntity {
     UUID id;
     String name;
+    String surname;
     String email;
     String password;
+    Role role;
 }

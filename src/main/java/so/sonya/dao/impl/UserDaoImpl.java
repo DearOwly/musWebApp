@@ -3,7 +3,7 @@ package so.sonya.dao.impl;
 import org.springframework.jdbc.core.JdbcTemplate;
 import so.sonya.connection.DataSourceConfiguration;
 import so.sonya.dao.UserDao;
-import so.sonya.dto.User;
+import so.sonya.dto.UserEntity;
 
 import javax.sql.DataSource;
 import java.util.List;
@@ -27,22 +27,22 @@ public class UserDaoImpl<T> implements UserDao<T> {
     }
 
     @Override
-    public Optional<User> findByEmail(String email) {
+    public Optional<UserEntity> findByEmail(String email) {
         return Optional.empty();
     }
 
     @Override
-    public Optional<User> findById(UUID id) {
+    public Optional<UserEntity> findById(UUID id) {
         return Optional.empty();
     }
 
     @Override
-    public List<User> findAll() {
+    public List<UserEntity> findAll() {
         return null;
     }
 
     @Override
-    public User save(User item) {
+    public UserEntity save(UserEntity item) {
         return null;
     }
 

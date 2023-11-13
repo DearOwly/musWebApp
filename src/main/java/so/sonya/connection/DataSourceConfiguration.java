@@ -7,6 +7,7 @@ import so.sonya.connection.property.DbPropertyReader;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
+import java.sql.SQLException;
 
 public class DataSourceConfiguration {
 
@@ -25,24 +26,25 @@ public class DataSourceConfiguration {
         if (instance == null){
             synchronized (DataSourceConfiguration.class) {
                 instance = new DataSourceConfiguration();
-                return instance;
             }
-        } else {
-            return instance;
         }
-
+        return instance;
     }
 
-    @SneakyThrows
+
     public Connection getConnection(){
-        return dataSource.getConnection();
+        try {
+            return dataSource.getConnection();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private DataSource configure(String username, String password, String url, String driver) {
         try {
             Class.forName(driver);
         } catch (ClassNotFoundException e) {
-            System.out.println("Postgresql Driver not found.");
+            throw new RuntimeException(e);
         }
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setUsername(username);
