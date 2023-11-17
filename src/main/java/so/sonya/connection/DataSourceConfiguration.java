@@ -11,7 +11,7 @@ import java.sql.SQLException;
 
 public class DataSourceConfiguration {
 
-    private static DataSourceConfiguration instance;
+    private volatile static DataSourceConfiguration instance;
 
     private final DataSource dataSource;
 
@@ -23,7 +23,7 @@ public class DataSourceConfiguration {
     }
 
     public static DataSourceConfiguration getInstance() {
-        if (instance == null){
+        if (instance == null) {
             synchronized (DataSourceConfiguration.class) {
                 instance = new DataSourceConfiguration();
             }
@@ -32,7 +32,7 @@ public class DataSourceConfiguration {
     }
 
 
-    public Connection getConnection(){
+    public Connection getConnection() {
         try {
             return dataSource.getConnection();
         } catch (SQLException e) {

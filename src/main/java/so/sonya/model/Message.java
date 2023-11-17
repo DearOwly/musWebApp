@@ -1,21 +1,24 @@
-package so.sonya.dto;
+package so.sonya.model;
+
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
+import java.time.Instant;
 import java.util.UUID;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
 @Builder
+@Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
 
-public class UserEntity {
-    UUID id;
-    String name;
-    String surname;
-    String email;
-    String password;
-    Role role;
+public class Message {
+
+    Long id;
+    String text;
+    UUID authorId;
+    Instant dateOfWrite;
+    Long postId;
+
 }

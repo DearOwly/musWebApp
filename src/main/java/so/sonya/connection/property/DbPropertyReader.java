@@ -13,7 +13,6 @@ import java.util.Properties;
 @Data
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-
 public class DbPropertyReader {
 
     String username;
