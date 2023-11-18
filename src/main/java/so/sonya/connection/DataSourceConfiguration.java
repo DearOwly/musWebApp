@@ -1,7 +1,5 @@
 package so.sonya.connection;
 
-import lombok.SneakyThrows;
-import org.postgresql.ds.PGSimpleDataSource;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import so.sonya.connection.property.DbPropertyReader;
 

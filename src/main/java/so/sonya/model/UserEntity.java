@@ -2,8 +2,6 @@ package so.sonya.model;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-
-import java.time.Instant;
 import java.util.UUID;
 
 
