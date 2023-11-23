@@ -8,7 +8,6 @@ public interface Dao <T, K>{
     T save(T model);
     Optional<T> findById(K id);
     List<T> findAll();
-    boolean update(T model, K id);
-    void delete(K id);
+    boolean delete(K id);
 
 }
