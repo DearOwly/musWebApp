@@ -1,9 +1,8 @@
 package so.sonya.service.impl;
 
 import so.sonya.dao.UserDao;
-import so.sonya.dao.impl.UserDaoImpl;
 import so.sonya.dto.RegistrationForm;
-import so.sonya.dto.SignInForm;
+import so.sonya.dto.LogInForm;
 import so.sonya.dto.UserEntityDto;
 import so.sonya.model.UserEntity;
 import so.sonya.service.AuthorizationService;
@@ -34,7 +33,7 @@ public class AuthorizationServiceImpl implements AuthorizationService {
     }
 
     @Override
-    public UserEntityDto signIn(SignInForm form) {
+    public UserEntityDto signIn(LogInForm form) {
         return null;
     }
 }
