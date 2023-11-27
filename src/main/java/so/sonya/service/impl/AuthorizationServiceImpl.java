@@ -1,5 +1,6 @@
 package so.sonya.service.impl;
 
+import lombok.AllArgsConstructor;
 import so.sonya.dao.UserDao;
 import so.sonya.dto.RegistrationForm;
 import so.sonya.dto.LogInForm;
@@ -11,6 +12,7 @@ import so.sonya.service.UserMapper;
 
 import java.util.Optional;
 
+@AllArgsConstructor
 public class AuthorizationServiceImpl implements AuthorizationService {
 
     private UserDao userDao;

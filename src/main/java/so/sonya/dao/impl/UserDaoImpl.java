@@ -4,6 +4,7 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
+import so.sonya.connection.DataSourceConfiguration;
 import so.sonya.dao.UserDao;
 import so.sonya.model.UserEntity;
 
@@ -27,7 +28,7 @@ public class UserDaoImpl implements UserDao {
             .password(row.getString("password"))
             .build();
 
-    public UserDaoImpl(DataSource dataSource) {
+    public UserDaoImpl(DataSourceConfiguration dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
     }
 

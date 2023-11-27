@@ -3,8 +3,6 @@ package so.sonya.dto;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import so.sonya.model.UserEntity;
-
-import java.time.Instant;
 import java.util.UUID;
 
 @NoArgsConstructor
