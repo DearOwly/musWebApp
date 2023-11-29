@@ -1,3 +1,4 @@
+<#-- @ftlvariable name="user" type="so.sonya.dto.UserEntityDto" -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,8 +16,8 @@
         <h2>ПРОФИЛЬ</h2>
         <div class="user">
             <img src="./images/profile.png" alt="profile img">
-            <div class="user__info">${user.firstName}</div>
-            <div class="user__info">${user.lastName}</div>
+            <div class="user__info">${user.name}</div>
+            <div class="user__info">${user.surname}</div>
             <div class="user__info">${user.email}</div>
         </div>
         <a href="/authorization">ВЫХОД</a>
