@@ -1,14 +1,31 @@
+<!doctype html>
 <html lang="en">
-<link rel="stylesheet" href="./styles/aut.css">
 <head>
     <meta charset="UTF-8">
-    <title>Sign in</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/aut.css">
+    <title>Document</title>
 </head>
+
 <body>
-<form method="post">
-    <input name="username" type="text" placeholder="NAME" class="input"/>
-    <input name="password" type="password" placeholder="PASSWORD" class="input"/>
-    <input type="submit" value="Login" class="input">
-</form>
+<header>
+</header>
+<main>
+    <form class="container" method="post">
+        <h2>SIGN IN</h2>
+        <label>
+            <input class="sign__form" name="email" type="email">
+        </label>
+        <label>
+            <input class="sign__form" name="password" type="password">
+        </label>
+
+        <input class="sign__btn" type="submit">
+    </form>
+
+</main>
+<footer></footer>
 </body>
 </html>
