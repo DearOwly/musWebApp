@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    color: darkred;
 }
 header{
     background-color: darkred;
@@ -49,4 +50,23 @@ form{
     border: 2px solid darkred;
     border-radius: 4px;
     margin-top: 100px;
+}
+form a{
+    color: darkred;
+}
+img{
+    width: 200px;
+}
+.user__info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    font-size: 2rem;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

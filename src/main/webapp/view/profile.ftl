@@ -1,20 +1,26 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html lang="en">
 <head>
-    <style>
-        a {
-            font-size: 20px;
-            margin-top: 30px;
-        }
-    </style>
-    <title>PROFILE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/aut.css">
+    <title>Profile</title>
 </head>
-
 <body>
-
-<h1>Profile</h1>
-<p>User: ${userName}</p>
-<a href="/authorization">SIGN OUT</a>
-
+<header></header>
+<main>
+    <form class="container">
+        <h2>ПРОФИЛЬ</h2>
+        <div class="user">
+            <img src="./images/profile.png" alt="profile img">
+            <div class="user__info">${user.firstName}</div>
+            <div class="user__info">${user.lastName}</div>
+            <div class="user__info">${user.email}</div>
+        </div>
+        <a href="/authorization">ВЫХОД</a>
+    </form>
+</main>
 </body>
 </html>
